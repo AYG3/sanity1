@@ -4,14 +4,13 @@ export default async function Home() {
   
   const projects = await getProjects()
   
-  return <div>
-    
+  return  (
+  <div>
     {projects.map((project)=>(
       <div key={project._id}>
-
+        {project.name}
       </div>
     ))}
-    My projects go here
-    
   </div>
+  );
 }
