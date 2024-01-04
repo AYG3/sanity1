@@ -5,8 +5,8 @@ export async function getProjects(){
 
     projectId: 'bd3z4ra8',
     dataset: 'production',
-    apiVersion: '2024-01-02',
-    
+    apiVersion: '2024-01-03',
+    useCdn: true,
 });
 
 return client.fetch(
